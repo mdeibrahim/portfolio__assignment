@@ -283,8 +283,99 @@ textarea:valid {
 
 
 /* Mobile/Touch Device Hover Effects */
+/* Default mobile-first styles (applies to all screens) */
+.navbar {
+    padding: 0.5rem 1rem;
+}
 
-@media (max-width: 1000px) {
+.navbar-toggler {
+    display: block;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+}
+
+.navbar-collapse {
+    display: none;
+}
+
+.navbar-collapse.show {
+    display: block;
+}
+
+/* Styles for 992px and above (desktop)------------------------------------------------------------------- */
+
+/* Default mobile-first styles (applies to all screens) */
+.navbar {
+    padding: 0.5rem 1rem;
+}
+
+.navbar-toggler {
+    display: block;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+}
+
+.navbar-collapse {
+    display: none;
+}
+
+.navbar-collapse.show {
+    display: block;
+}
+
+/* Styles for 992px and above (desktop) */
+@media (min-width: 993px) {
+    /* .navbar {
+   
+    } */
+
+    .navbar-toggler {
+        display: none;
+    }
+
+    .navbar-collapse {
+        display: flex !important;
+        /* Always show nav items */
+        flex-basis: auto;
+        flex-grow: 1;
+        align-items: center;
+    }
+
+    .navbar-nav {
+        flex-direction: row;
+        margin-left: auto;
+        /* Push nav to right */
+    }
+
+    .nav-item {
+        text-align: center;
+    }
+
+    /* Show the Download CV button only on desktop */
+    .nav-item.d-lg-none.d-xl-block {
+        display: block !important;
+    }
+}
+
+/* Optional: Add smooth transition for mobile menu */
+.navbar-collapse {
+    transition: all 0.3s ease;
+}
+
+.logo_border {
+    border-radius: 50%;
+}
+
+
+.logo:hover {
+    transform: scale(1.05);
+}
+
+
+
+@media (max-width: 992px) {
     .nav_home {
         margin-left: 10px;
         max-height: 250px;
@@ -400,6 +491,7 @@ textarea:valid {
         }
     }
 }
+
 @media (max-width: 780px) {
     .nav_home {
         margin-left: 10px;
@@ -566,9 +658,10 @@ textarea:valid {
         text-align: center;
         margin-top: 0.5rem;
     } */
-     .banner{
+    .banner {
         padding-right: 50px;
-     }
+    }
+
     .banner_text {
         max-width: 350px;
     }
