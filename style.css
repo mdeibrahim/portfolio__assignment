@@ -284,6 +284,122 @@ textarea:valid {
 
 /* Mobile/Touch Device Hover Effects */
 
+@media (max-width: 992px) {
+    .nav_home {
+        margin-left: 10px;
+        max-height: 250px;
+        max-width: 90px;
+
+        .btn-cv {
+            font-size: 10px;
+            block-size: 50px;
+            margin: 10px;
+            padding: 0px;
+        }
+
+        .down_cv {
+            font-size: small;
+
+        }
+    }
+
+    .nav-item {
+        width: 100%;
+        text-align: center;
+    }
+
+    .logo {
+        position: relative;
+        left: 30px;
+    }
+
+    .navbar-nav .nav-link {
+        display: inline-block;
+        padding: 0.5rem;
+    }
+
+    /* Active hover for phone */
+    .navbar-nav .nav-link:active,
+    .navbar-nav .nav-link:focus,
+    .navbar-nav .nav-link:hover {
+        color: rgb(255, 106, 0) !important;
+        background-color: rgba(255, 255, 255, 0.1);
+        border-radius: 5px;
+    }
+
+    .banner_text {
+        margin-left: 30px;
+    }
+
+    .ttt {
+        font-size: 20px;
+
+        .down_cv {
+            font-size: 12px;
+        }
+    }
+
+    .down_btn {
+        width: 100%;
+        text-align: center;
+        margin-top: 0.5rem;
+    }
+
+    .container-fluid {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .car {
+        width: 90%;
+        padding-right: 15px;
+        margin: 0px;
+    }
+
+    .rrr {
+
+        .tec_list {
+            width: 100%;
+        }
+
+        .edu_section {
+            padding-top: 65px;
+            width: 100%;
+        }
+
+    }
+
+    .carousel-inner {
+        border-bottom: 1px solid #ddd;
+
+    }
+
+    .text {
+        margin: 15px 0 !important;
+        padding: 15px !important;
+    }
+
+    .banner-tex {
+        padding-left: 50px;
+    }
+
+    .tog_icon {
+        width: 15px;
+        border: none;
+    }
+
+    .nav_home {
+        border: 1px solid rgb(110, 38, 110);
+        border-radius: 25px;
+        width: 120px;
+        height: 350px;
+
+        .down_btn {
+            font-size: x-small;
+
+        }
+    }
+}
 @media (max-width: 780px) {
     .nav_home {
         margin-left: 10px;
