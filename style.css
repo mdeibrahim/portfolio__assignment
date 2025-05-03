@@ -450,9 +450,11 @@ textarea:valid {
         text-align: center;
         margin-top: 0.5rem;
     } */
+     .banner{
+        padding-right: 30px;
+     }
     .banner_text {
-        max-width: 400px;
-
+        max-width: 350px;
     }
 
     .container-fluid {
